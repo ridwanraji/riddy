@@ -33,16 +33,5 @@ export default class ExpressServer extends Server<
         new ExpressResponse(res)
       ).run();
     });
-
-    // this.fastify.route({
-    //   method: method.toUpperCase() as HTTPMethods,
-    //   url: route,
-    //   async handler(req, res) {
-    //     await new Controller(
-    //       new FastifyRequest(req),
-    //       new FastifyResponse(res)
-    //     ).run();
-    //   },
-    // });
   }
 }
